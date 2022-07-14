@@ -4,7 +4,7 @@ import unittest
 def reverse_string(s):
     if s == "":
         return ""
-    return s[-1:] + reverse_string(s[:-1])
+    return reverse_string(s[1:])+ s[0] 
 
 class test_reverse_string(unittest.TestCase):
     def test_basic(self):
