@@ -41,4 +41,4 @@ desktop = {
 
 print(pathfinder(desktop, 'app_academy_logo.svg'))   
 print(pathfinder(desktop, 'everlong.flac'))            
-print(pathfinder(desktop, 'sequoia.jpeg')) # False
+print(pathfinder(desktop, 'sequoia.jpeg')) # None will be returned as file not found
