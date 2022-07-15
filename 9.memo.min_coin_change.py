@@ -1,5 +1,12 @@
 # Function takes two inputs - arrary with different denominations & Target amount
 # Should return the number of coins needed
+def checkMinChange(deno,amt):
+    for coin in deno:
+        if amt % coin == 0:
+            return minChange(deno,amt,{})
+    else:
+        return None
+
 def minChange(deno,amt,memo={}):
     if amt in memo:
         return memo[amt]
@@ -12,8 +19,8 @@ def minChange(deno,amt,memo={}):
     memo[amt] = min(num_coins)
     return memo[amt]
 
-print(minChange([1,2],3,{}))
-print(minChange([1,2,5],20,{}))
-print(minChange([1,3,5],4,{}))
-print(minChange([20],100,{}))
-print(minChange([2,4],7,{}))
+print(checkMinChange([1,2],3))
+print(checkMinChange([1,2,5],20))
+print(checkMinChange([1,3,5],4))
+print(checkMinChange([20],100))
+print(checkMinChange([2,4],7))
