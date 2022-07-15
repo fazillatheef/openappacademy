@@ -1,10 +1,8 @@
-# flatten a multi dimension arrays into a 1 dimension array
+# flatten multi dimension arrays into a 1 dimension array
 import unittest
 
 def flatten(l):
-    if l==[]:
-        return []
-    elif type(l)!= list:
+    if type(l)!= list:
         return [l]
     else:
         result=[]
