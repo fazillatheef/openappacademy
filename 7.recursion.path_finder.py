@@ -1,18 +1,12 @@
-def pathfinder(dir,file,path=""):
+def pathfinder(dir,file):
     for f in dir.keys():
         if f == file:
-            path += '/' +  f
-            return path
+            return '/' +  f
         else:
             if f[0] =='/':
-                if path:
-                    path += f
-                else:
-                    path = f
-                #print(f,path)
-                path = pathfinder(dir[f],file,path)
+                path = pathfinder(dir[f],file)
                 if path != None:
-                    return path
+                    return f + path
     return None
 
 desktop = {
