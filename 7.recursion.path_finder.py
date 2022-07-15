@@ -6,7 +6,7 @@ def pathfinder(dir,file):
             if f[0] =='/':
                 path = pathfinder(dir[f],file)
                 if path != None:
-                    return f + path
+                    return f + path # current folder + whatever was found recursively
     return None
 
 desktop = {
