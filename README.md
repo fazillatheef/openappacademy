@@ -7,3 +7,5 @@ Recursion is all about dynamically increasing loops and conditions. If recursion
 Memoisation is a method to store results for most commonly re-used parts in a recursive code. We have to identify the thing that changes to store results in a dictionary(python).  
 
 Tabulation is using a parallel array to keep the intermediate results of an algorithm. It looks better than recursion. And feels more logical. Can be even implemented in COBOL
+
+
