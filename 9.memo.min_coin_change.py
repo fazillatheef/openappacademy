@@ -1,5 +1,4 @@
-# Function takes two inputs - arrary with different denominations & Target amount
-# Should return the number of coins needed
+# Function checks for impossible denominations
 def checkMinChange(deno,amt):
     for coin in deno:
         if amt % coin == 0:
@@ -7,6 +6,11 @@ def checkMinChange(deno,amt):
     else:
         return None
 
+# Function takes two inputs - arrary with different denominations & Target amount
+# Should return the minimum number of coins needed
+# Each time a recursive call is done 1 is added
+# The final sum is stored in a an array
+# The minimum sum is returned
 def minChange(deno,amt,memo={}):
     if amt in memo:
         return memo[amt]
