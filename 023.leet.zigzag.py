@@ -1,3 +1,7 @@
+# Text is written in rows in a zig zag way, print out the string row wise
+# P A H N
+# APLSIIG
+# Y I R
 def convert(s: str, numRows: int) -> str:
     L = len(s)
     res = ""
