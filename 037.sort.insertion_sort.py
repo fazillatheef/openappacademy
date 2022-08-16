@@ -4,11 +4,9 @@ a = [5, 7, 100, 2, 4, 8, 7, 1, 3]
 def insertion_sort(a):
     for i in range(1, len(a)):
         curr = a[i]
-        for j in range(i-1, -1, -1):
-            if curr > a[j]:
-                break
+        j = i-1
+        while j >= 0 and curr < a[j]:
             a[j+1] = a[j]
-        else:
             j -= 1
         a[j+1] = curr
     return a
