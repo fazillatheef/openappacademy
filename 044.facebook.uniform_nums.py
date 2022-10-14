@@ -25,7 +25,7 @@ def getUniformIntegerCountInInterval(A, B):
     if s1 == 1 or s2 == 1:
         s = 1
     print(to_B, to_A)
-    return to_B - to_A + s
+    return to_B - to_A + s 
 
 
 print(getUniformIntegerCountInInterval(1, 9))
